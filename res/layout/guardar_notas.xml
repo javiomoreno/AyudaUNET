@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/fondo"
+    android:orientation="vertical">
+    
+    <TableLayout
+        android:id="@+id/tableTablaConversion"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:stretchColumns="*" >
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableTablaConversion"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickNuevoSemestre"
+        android:text="Nuevo Semestre" />
+
+    <TableLayout
+        android:id="@+id/tablaMaterias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="*">
+    </TableLayout>
+
+    <Button
+        android:id="@+id/n_materia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="onClickNuevoMateria"
+        android:visibility="invisible"
+        android:text="Agregar Materia" />
+    
+</RelativeLayout>
